@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Inscription</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form action="page.sql" method="post">
+    <fieldset>
+      <legend>Information Personnelle :</legend>
+
+      <label class="largeur">Sexe : </label>
+      <input type="radio" name="sexe" id="homme" value="Homme">Homme
+      <input type="radio" name="sexe" id="femme" value="Femme">Femme<br>
+
+      <label class="largeur" for="np">Nom et prénom : </label>
+      <input type="text" id="np" name="np"><br>
+
+      <label class="largeur" for="tel">Num Tel : </label> 
+      <input type="number" id="tel" name="tel"><br>
+
+      <label class="largeur" for="date_naissance">Date de naissance : </label>
+      <input type="date" id="date_naissance" name="date_naissance"><br>
+
+      <label class="largeur" for="gouvernorat">Gouvernorat : </label>
+      <input type="text" id="gouvernorat" name="gouvernorat" list="gouv"><br>
+      <datalist id="gouv">
+        <option value="Tunis"></option>
+        <option value="Ariana"></option>
+        <option value="Mnaouba"></option>
+      </datalist>
+
+      <label class="largeur" for="email">Email : </label>
+      <input type="email" id="email" name="email"><br>
+
+      <label class="largeur" for="password">Mot de passe : </label>
+      <input type="password" id="password" name="password"><br>
+
+      <label class="largeur" for="confirm_password">Confirmation Mot de passe :</label>
+      <input type="password" id="confirm_password" name="confirm_password"><br>
+
+      <input type="checkbox" id="conditions" name="conditions"> 
+      J'accepte
+      <a href="./files/conditionsgénérales.txt">les conditions générales</a><br>
+
+      <div>
+        <input class="bt" type="submit" value="Soumettre">
+        <input class="bt" type="reset" value="Annuler">
+      </div>
+    </fieldset>
+  </form>
+</body>
+</html>

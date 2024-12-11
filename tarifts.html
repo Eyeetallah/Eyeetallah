@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Trafits</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+</head>
+<body>
+  <form action="page.sql" method="post">
+    <fieldset>
+      <legend>Trafits abonnements :</legend>
+
+      <label for="current_date" class="largeur">Date Actuelle :</label>
+      <input type="date" name="date" id="current_date"><br>
+
+      <label class="largeur">Age :</label>
+      <input type="radio" name="age" id="enfant" value="Enfant">Enfant
+      <input type="radio" name="age" id="adulte" value="Adulte">Adulte<br>
+
+      <label class="largeur">Abonnement :</label>
+      <input type="radio" name="abonnement" id="mois6" value="6 Mois">6 Mois
+      <input type="radio" name="abonnement" id="mois12" value="12 Mois">12 Mois <br>
+
+      <label for="extra" class="largeur">Extra :</label>
+      <select id="extra" name="extra">
+        <option value="">choisir votre extra</option>
+        <option value="piscine">piscine</option>
+        <option value="sonar">sonar</option>
+      </select><br>
+
+      <input type="checkbox">J'ai un bon de réduction<br>
+
+      <div>
+        <input type="button" value="Calculer" class="bt">
+        <input type="reset" value="Annuler" class="bt">
+      </div>
+    </fieldset>
+  </form>
+</body>
+</html>
